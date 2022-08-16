@@ -1,0 +1,118 @@
+.centerContainer {
+  flex: 3 0 45%;
+  height: 100%;
+  width: 600px;
+  background:#fff;
+ }
+
+ /* Main Container */
+.centerContainer__home {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid rgb(230, 236, 240);
+  color: #39393a;
+  padding: 0.5rem 1rem;
+}
+
+/* centerContainer__home panel */
+.centerContainer__home h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.centerContainer__home i {
+  font-size: 1.4rem;
+  color: rgba(29,161,242,1.00);
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 50%
+}
+
+.centerContainer__home i:hover {
+  background: rgba(29, 161, 242, 0.1);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Create Tweet box */
+.centerContainer__post-tweet {
+  background: #fff;
+  border-bottom: 10px solid rgb(230, 236, 240);
+}
+
+.centerContainer__post-tweet__formGroup-1 {
+  display: flex;
+  flex-flow: row;
+  padding: 0.3rem 1rem;
+  max-width: 100%;
+}
+
+.centerContainer__post-tweet img {
+  display: inline-block;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.centerContainer__post-tweet textarea {
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  height: auto;
+  overflow:hidden;
+  padding: 0.5rem 1rem;
+  resize: none;
+  width: 100%;
+}
+
+.centerContainer__post-tweet textarea::placeholder {
+  color: rgba(123, 124, 126, 0.719);
+}
+
+.centerContainer__post-tweet textarea:focus {
+  outline: none;
+}
+
+.centerContainer__post-tweet__formGroup-2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.8rem;
+}
+
+.centerContainer__post-tweet__formGroup-2__posticons {
+  padding-left: 4rem;
+  color: #1da1f2;
+}
+
+.centerContainer__post-tweet__formGroup-2__posticons i {
+  padding-right: 10px;
+  font-size: 1.4rem;
+}
+
+.centerContainer__post-tweet__formGroup-2__posticons i:hover {
+  color: #1da0f2c2;
+  cursor: pointer;
+}
+
+.centerContainer__post-tweet__formGroup-2 .btn {
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  background: #1d9bf0;
+  color: #fff;
+  border-radius: 25px;
+  margin-right: 1rem;
+}
+
+.btn:focus {
+  outline: none;
+}

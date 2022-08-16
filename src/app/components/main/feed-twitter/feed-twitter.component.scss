@@ -1,0 +1,123 @@
+.tweets img {
+  display: block;
+  width: 100%;
+}
+
+.tweets__userPics img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0.5rem 1rem;
+}
+
+.tweets {
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  font-size: 15px;
+  width: 100%;
+  line-height: 1.75rem;
+  padding-top: 0.5rem;
+  border-bottom: 1px solid rgb(230, 236, 240);
+}
+
+.tweets:hover {
+  background: rgb(245, 248, 250);
+  width: 100%;
+}
+
+.fullName:hover {
+  text-decoration: underline;
+}
+
+.userContent img {
+  border-radius: 20px;
+}
+
+.userContent {
+  width: 600px;
+  padding-right: 1rem;
+  color: rgb(48, 52, 56);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.userContent a {
+  color: rgb(27, 149, 224);
+}
+
+.userContentBox {
+  display: flex;
+  flex-flow: column nowrap;
+  color: rgb(20, 23, 26);
+}
+
+.userContentBox__userNames {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.userContentBox__userNames__fullName {
+  color: rgb(20, 23, 26);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+
+.userContentBox__userNames__userName {
+  padding-right: 10px;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: rgb(101, 119, 134);
+}
+
+.time {
+  color: rgb(101, 119, 134);
+}
+
+.userNames i {
+  padding-top: 0.6rem;
+  margin-left: 50%;
+  color: rgb(101, 119, 134);
+
+}
+
+.contentIcons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 4rem 1rem 0;
+}
+
+.contentIcons i {
+  color: rgb(101, 119, 134);
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+
+.contentIcons i:last-child {
+  font-size: 14px;
+}
+
+.contentIcons .blue:hover {
+  color: rgba(29, 161,242,1.00);
+}
+
+.contentIcons .green:hover {
+  color: rgb(23 191 99);
+}
+
+.contentIcons .red:hover {
+  color: rgb(224, 36, 94);
+}
+
+.btn {
+  color: #fff;
+}
+.text-break {
+  overflow-wrap: break-word;
+}

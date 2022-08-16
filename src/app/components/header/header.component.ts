@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UserTwitter } from 'src/app/shared/models/user-twitter';
 import { UserDataService } from 'src/app/shared/services/user-data.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class AppComponent {
+export class HeaderComponent implements OnInit {
 
   public data: UserTwitter;
 
@@ -20,6 +20,5 @@ export class AppComponent {
   ngOnInit(): void {
     this.data = this.userDataService.getUserDataTwitter();
   }
-
 
 }

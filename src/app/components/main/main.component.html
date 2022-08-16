@@ -1,0 +1,39 @@
+<app-footer></app-footer>
+<div class="centerContainer flex-item">
+  <div class="centerContainer__home">
+    <h1>Home</h1>
+    <i class="bi bi-magic"></i>
+  </div>
+
+  <div class="centerContainer__post-tweet">
+    <form [formGroup]="formTwitter">
+      <div class="centerContainer__post-tweet__formGroup-1">
+        <img [src]="dataTwitter.photoProfile" alt="profile-pics">
+        <textarea
+          #countWords
+          formControlName="tweet"
+          placeholder="What's happening?"
+          maxlength="130"
+          rows="3"></textarea>
+      </div>
+      <div class="centerContainer__post-tweet__formGroup-2">
+        <div class="centerContainer__post-tweet__formGroup-2__posticons">
+          <i class="bi bi-card-image"></i>
+          <i class="bi bi-file-image"></i>
+          <i class="bi bi-emoji-smile"></i>
+          <i class="bi bi-calendar-check"></i>
+        </div>
+        <div>
+          <span>
+            {{ 130 - countWords.value.length }} / 130
+          </span>
+        </div>
+        <button
+          class="btn"
+          type="submit"
+          (click)="onSubmit()" [disabled]="formTwitter.invalid">Tweet</button>
+      </div>
+    </form>
+  </div>
+  <app-feed-twitter></app-feed-twitter>
+</div>

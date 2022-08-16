@@ -1,0 +1,50 @@
+<div>
+  <div class="leftContainer flex-item">
+    <div class="leftContainer__nav-links">
+      <ul>
+        <li class="leftContainer__nav-links__nav-items logo">
+          <a href="#"><i class="bi bi-twitter"></i></a>
+        </li>
+        <li class="leftContainer__nav-links__nav-items current-page">
+          <a href="#"><i class="bi bi-house-heart-fill"></i> Home</a>
+        </li>
+        <li class="leftContainer__nav-links__nav-items">
+          <a href="#"><i class="bi bi-hash"></i> Explore</a>
+        </li>
+        <li class="leftContainer__nav-links__nav-items">
+          <a href="#"><i class="bi bi-bell"></i> Notifications</a>
+        </li>
+        <li class="leftContainer__nav-links__nav-items">
+          <a href="#"><i class="bi bi-envelope"></i> Messages</a>
+        </li>
+        <li class="leftContainer__nav-links__nav-items">
+          <a href="#"><i class="bi bi-bookmark"></i> Bookmarks</a>
+        </li>
+        <li class="leftContainer__nav-links__nav-items">
+          <a href="#"><i class="bi bi-list-ul"></i> Lists</a>
+        </li>
+        <li class="leftContainer__nav-links__nav-items">
+          <a href="#"><i class="bi bi-person"></i> Profile</a>
+        </li>
+        <li class="leftContainer__nav-links__nav-items">
+          <a href="#"><i class="bi-three-dots"></i> More</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tweet"><a href="#">Tweet</a></div>
+
+    <div class="tweet__profile-box">
+      <img [src]="data.photoProfile" alt="profile">
+
+      <div class="profile-link">
+        <p class="full-name">{{ data.fullName }}</p>
+        <p class="tweet__profile-box__user-name">{{ data.userName }}</p>
+      </div>
+
+      <div class="options-icon">
+        <i class="bi bi-caret-down-fill"></i>
+      </div>
+    </div>
+  </div>
+</div>

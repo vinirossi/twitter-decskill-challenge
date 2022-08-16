@@ -1,0 +1,119 @@
+
+a {
+  text-decoration: none;
+}
+img:hover, .full-name:hover, .user-name:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Main Containers */
+.leftContainer {
+  flex: 1 0 22%;
+  height: 100%;
+  max-width: 250px;
+  position: sticky;
+  top: 0;
+  background:#fff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgb(230, 236, 240);
+}
+
+/* Left Navigation */
+.logo i{
+  color: #1da1f2;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.logo i:hover {
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.leftContainer__nav-links a {
+  font-weight: 750;
+  color: rgba(20, 23, 26, 0.93);
+  padding: 10px 15px;
+}
+
+.current-page a { color: rgba(29,161,242,1.00);}
+
+.leftContainer__nav-links a:hover {
+  background: rgba(29, 161, 242, 0.1);
+  color: #1da1f2;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+.leftContainer__nav-links__nav-items {
+  margin: 1.2rem 2rem;
+  white-space: nowrap;
+}
+.leftContainer__nav-links i {
+  padding-right: 0.5rem;
+}
+.leftContainer__nav-links {
+  margin-top: -1rem;
+}
+
+.tweet a {
+  display: block;
+  margin: auto;
+  width: 100%;
+  color: #fff;
+  background: #1da1f2;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 5rem;
+  border-radius: 25px;
+}
+
+.tweet a:hover {
+  color: #fff;
+  background: #198ed6;
+}
+
+.tweet__profile-box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  align-self: center;
+  padding: 0 0.6rem;
+}
+.tweet__profile-box:hover {
+  background: rgba(29, 161, 242, 0.1);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.tweet__profile-box img {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+.tweet__profile-box .full-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.tweet__profile-box .options-icon {
+  color: #39393a;
+  margin-left: 1rem;
+}
+
+.tweet__profile-box__user-name {
+  color: #39393a;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem;
+}
